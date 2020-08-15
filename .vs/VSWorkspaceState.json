@@ -1,6 +1,11 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\static",
+    "\\static\\assets\\images",
+    "\\templates",
+    "\\univers"
   ],
+  "SelectedNode": "\\templates\\works.html",
   "PreviewInSolutionExplorer": false
 }
