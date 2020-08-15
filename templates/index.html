@@ -17,7 +17,7 @@
 
   <title>felicia wang</title>  
 
-<link href="url_for('static', filename='design.css')" rel="stylesheet">
+  <link href="./static/main.3f6952e4.css" rel="stylesheet">
 </head>
 
 <body class="minimal">
@@ -25,7 +25,7 @@
 <div id="site-border-right"></div>
 <div id="site-border-top"></div>
 <div id="site-border-bottom"></div>
-<!-- Add your content of header -->
+<!-- Content Header -->
 <header>
   <nav class="navbar  navbar-fixed-top navbar-inverse">
     <div class="container">
@@ -38,32 +38,34 @@
 
       <div class="collapse navbar-collapse" id="navbar-collapse">
         <ul class="nav navbar-nav ">
-          <li><a href="./index.html" title="">home</a></li>
-          <li><a href="./works.html" title="">portfolio</a></li>
+          <li><a href="/" title="">home</a></li>
+          <li><a href="./portfolio" title="">portfolio</a></li>
           <li><a href="./about.html" title="">about me</a></li>
           <li><a href="./contact.html" title="">contact</a></li>
         </ul>
-
-
       </div> 
     </div>
   </nav>
 </header>
-<!-- Add your site or app content here -->
-  <div class="hero-full-container background-image-container white-text-container" style="background-image: url('./assets/images/space.jpg')">
+<!-- Page Content -->
+  <div class="hero-full-container background-image-container white-text-container" style="background-image: url('./static/assets/images/pinksunset.jpg')">
     <div class="container">
       <div class="row">
         <div class="col-xs-12">
           <div class="hero-full-wrapper">
             <div class="text-content">
-              <h1>Hello, I am<br>
-                <span id="typed-strings">
-                  <span>Felicia Wang.</span>
-                  <span>a Computer Science major at UIUC.</span>
-                  <span>currently residing in Chicago, IL.</span>
-                </span>
-                <span id="typed"></span>
-              </h1>
+                <center>
+                    <h1>
+                        Hello, I am<br>
+                        <span id="typed-strings">
+                            <span>Felicia Wang. 👋🏻</span>
+                            <span>a CS major at UIUC. 👩🏻‍💻</span>
+                            <span>currently residing near Chicago, IL. 🏙️</span>
+                            <span>probably eating ramen right now. 🍜</span>
+                        </span>
+                        <span id="typed"></span>
+                    </h1>
+                </center>
             </div>
           </div>
         </div>
@@ -79,6 +81,7 @@
 </script>
 
 
-<script type="text/javascript" src="./main.70a66962.js"></script></body>
+<script src={{url_for( 'static', filename='main.js' )}}></script>
+</body>
 
 </html>
