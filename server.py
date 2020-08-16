@@ -1,6 +1,7 @@
 from flask import Flask, render_template, url_for, redirect, request
+import csv
 app = Flask(__name__)
-app.debug = True
+
 
 @app.route('/')
 def index():
@@ -13,20 +14,27 @@ def page(page_name='/'):
     except:
         return redirect('/')
 
-# handles contact information form
-@app.route('/form_submission_success', methods = ['GET', 'POST'])
+# handles contact form submission
+@app.route('/form_submission_success', methods = ['GET','POST'] )
 def submit():
     if request.method == "POST":
-        data = request.form.to_dict()
-        write_data(data)
-        return render_template('formsubmitted.html')
+        try:
+            data = request.form.to_dict()
+            write_data_csv(data)
+            message = 'form submitted! i will get back to you as soon as possible.'
+            return render_template('formsubmitted.html',message=message)
+        except:
+            message = "did not save information to database."
+            return render_template('formsubmitted.html',message=message)
     else:
-        return "form not submitted."
+        message = "you didn't submit a form."
+        return render_template('formsubmitted.html', message=message)
 
-# Write contact information to database text file
-def write_data(data):
+# writes contact information to csv file
+def write_data_csv(data):
     email = data['email']
     subject = data['subject']
     message = data["message"]
-    with open('database.txt', 'a') as f:
-        f.write("email: {}, subject: {}, message: {}".format(email, subject, message))
+    with open('db.csv', 'wb') as csvfile:
+        db_writer = csv.writer(csvfile, delimiter=',',quotechar='|', quoting=csv.QUOTE_MINIMAL)
+        db_writer.writerow([email,subject,message])
