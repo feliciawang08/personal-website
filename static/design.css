@@ -4322,13 +4322,13 @@ tbody.collapse.in {
 }
 
 .navbar-nav {
-    margin: .25px -15px;
+    margin: .25px -15px
 }
 
     .navbar-nav > li > a {
         padding-top: 10px;
         padding-bottom: 10px;
-        line-height: 19px;
+        line-height: 19px
     }
 
 @media (max-width:767px) {
@@ -4359,12 +4359,12 @@ tbody.collapse.in {
 
 @media (min-width:768px) {
     .navbar-nav {
-        float: none;
+        float: left;
         margin: 0
     }
 
         .navbar-nav > li {
-            float: none
+            float: left
         }
 
             .navbar-nav > li > a {
@@ -4527,8 +4527,7 @@ tbody.collapse.in {
 
 .navbar-default {
     background-color: #fff;
-    border-color: transparent;
-    text-align: center;
+    border-color: transparent
 }
 
     .navbar-default .navbar-brand {
@@ -4545,13 +4544,8 @@ tbody.collapse.in {
         color: #777
     }
 
-    .navbar-default .navbar-nav li {
-        color: #000;
-        display: inline;
-    }
-
-    .navbar-default .navbar-nav a {
-        display: inline-block;
+    .navbar-default .navbar-nav > li > a {
+        color: #000
     }
 
         .navbar-default .navbar-nav > li > a:focus,
@@ -4589,7 +4583,7 @@ tbody.collapse.in {
 
     .navbar-default .navbar-collapse,
     .navbar-default .navbar-form {
-        border-color: transparent;
+        border-color: transparent
     }
 
     .navbar-default .navbar-nav > .open > a,
@@ -4601,7 +4595,7 @@ tbody.collapse.in {
 
 @media (max-width:767px) {
     .navbar-default .navbar-nav .open .dropdown-menu > li > a {
-        color: #000;
+        color: #000
     }
 
         .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus,
