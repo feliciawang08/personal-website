@@ -2,10 +2,10 @@
   "ExpandedNodes": [
     "",
     "\\static",
+    "\\static\\assets",
     "\\static\\assets\\images",
-    "\\templates",
-    "\\univers"
+    "\\templates"
   ],
-  "SelectedNode": "\\templates\\works.html",
+  "SelectedNode": "\\static\\design.css",
   "PreviewInSolutionExplorer": false
 }
