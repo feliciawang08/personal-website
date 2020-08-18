@@ -2,9 +2,8 @@
   "ExpandedNodes": [
     "",
     "\\static",
-    "\\static\\assets\\images",
     "\\templates"
   ],
-  "SelectedNode": "\\server.pyc",
+  "SelectedNode": "\\server.py",
   "PreviewInSolutionExplorer": false
 }
