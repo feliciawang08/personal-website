@@ -2,8 +2,10 @@
   "ExpandedNodes": [
     "",
     "\\static",
+    "\\static\\assets",
+    "\\static\\assets\\images",
     "\\templates"
   ],
-  "SelectedNode": "\\server.py",
+  "SelectedNode": "\\templates\\index.html",
   "PreviewInSolutionExplorer": false
 }
